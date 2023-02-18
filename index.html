@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        h1 {
+        text-align: center;
+        display: block;
+        }
+ 
+
+    
+        .card {
+            margin-right: 20px;
+        }
+    
+        img {
+            width: 10%;
+            height: auto;
+            display: inline-block;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery-container">
+        <div class="filters text-center">
+            <button id="all" class="filter-button" data-filter="*">All</button>
+            <button class="filter-button" data-filter=".nature">Nature</button>
+            <button class="filter-button" data-filter=".animal">Animals</button>
+            <button class="filter-button" data-filter=".architecture">Architecture</button>
+        </div>
+        <div class="gallery">
+            <div class="card nature">
+                <img src="nature1.jpg" alt="nature1">
+            </div>
+            <div class="card animal">
+                <img src="animal 1.jpg" alt="animal1">
+            </div>
+            <div class="card architecture">
+                <img src="arcitecture1 (1).jpg" alt="architecture1">
+            </div>
+            <div class="card nature">
+                <img src="nature2.jpg" alt="nature2">
+            </div>
+            <div class="card animal">
+                <img src="animal 2.jpg" alt="animal2">
+            </div>
+            <div class="card architecture">
+                <img src="arcitecture1 (2).jpg" alt="architecture2">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="myscript.js"></script>
+</body>
+</html>
